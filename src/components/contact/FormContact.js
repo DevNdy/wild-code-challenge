@@ -1,18 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { CourrierUser } from "../../context/context";
 
 const FormContact = () => {
-  const [userName, setUserName] = useState("");
-  const [userEmail, setUserEmail] = useState("");
-  const [userMess, setUserMess] = useState("");
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    alert(userName + " your message send to KingDom");
-    setUserName("");
-    setUserEmail("");
-    setUserMess("");
-  }
+  const { userName, userEmail, userMess, handleSubmit, inputName, inputEmail, inputMess } =
+    useContext(CourrierUser);
 
   return (
     <FormContactStyled onSubmit={handleSubmit}>
@@ -20,7 +12,7 @@ const FormContact = () => {
         Name:
         <input
           value={userName}
-          onChange={(e) => setUserName(e.target.value)}
+          onChange={inputName}
           type="text"
           name="name"
           placeholder="What is your name?"
@@ -31,7 +23,7 @@ const FormContact = () => {
         Email:
         <input
           value={userEmail}
-          onChange={(e) => setUserEmail(e.target.value)}
+          onChange={inputEmail}
           type="email"
           name="name"
           placeholder="What is your email?"
@@ -42,7 +34,7 @@ const FormContact = () => {
         Message:
         <textarea
           value={userMess}
-          onChange={(e) => setUserMess(e.target.value)}
+          onChange={inputMess}
           rows="10"
           cols="30"
           placeholder="what is your message"

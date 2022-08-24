@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Courrier from "../courrier/Courrier";
 
 const Footer = () => {
+  const [secrete, setSecrete] = useState(false);
   return (
     <FooterStyled>
+      {secrete ? <Courrier onClick={() => setSecrete(false)} /> : <></>}
       <ul>
         <li>Wild code school</li>
-        <li>CGU</li>
+        <li onClick={() => setSecrete(true)}>Courriers</li>
         <li>Challenge realisé pars Kévin Naudy</li>
       </ul>
     </FooterStyled>
