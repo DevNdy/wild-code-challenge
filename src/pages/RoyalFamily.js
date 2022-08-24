@@ -8,9 +8,9 @@ const RoyalFamily = () => {
     <RoyalFamilyStyled>
       <Title text={`"The family royal of kingdom of Colchis"`} />
       <div className="divCard">
-        <CardPerson img="king" name="King" />
+        <CardPerson img="king" name="The King" />
         <CardPerson img="princess" name="Princess" styleTxt="princessTxt" />
-        <CardPerson img="queen" name="Queen" />
+        <CardPerson img="queen" name="The Queen" />
       </div>
     </RoyalFamilyStyled>
   );
