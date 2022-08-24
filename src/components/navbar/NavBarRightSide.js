@@ -14,7 +14,7 @@ const NavBarRightSide = () => {
       <NavLink className="navLink" to="/royalassets">
         Royal Assets
       </NavLink>
-      <NavLink className="navLink" to="/">
+      <NavLink className="navLink" to="/contact">
         Contact Us
       </NavLink>
     </NavBarRightSideStyled>
