@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Presentation from "../components/home/Presentation";
+import Title from "../ui-reusable/Title";
 
 const Home = () => {
   return (
     <HomeStyled>
-      <h1>Welcome to the Royal Kingdom of Colchis</h1>
+      <Title text={`"Welcome to the Royal Kingdom of Colchis"`} />
       <Presentation />
     </HomeStyled>
   );
@@ -21,11 +22,6 @@ const HomeStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
-
-  h1 {
-    font-size: 35px;
-    margin-bottom: 90px;
-  }
 `;
 
 export default Home;

@@ -8,7 +8,7 @@ const NavBarRightSide = () => {
       <NavLink className="navLink" to="/">
         Home
       </NavLink>
-      <NavLink className="navLink" to="/">
+      <NavLink className="navLink" to="/royalfamily">
         Royal Family
       </NavLink>
       <NavLink className="navLink" to="/">
