@@ -29,6 +29,7 @@ const PresentationStyled = styled.article`
   h4 {
     color: black;
     opacity: 0.7;
+    font-size: 20px;
     &:hover {
       opacity: 1;
     }
