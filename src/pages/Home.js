@@ -13,7 +13,7 @@ const Home = () => {
 };
 
 const HomeStyled = styled.div`
-  height: 90vh;
+  min-height: 90vh;
   background-image: url(https://images.pexels.com/photos/37730/sunset-boat-sea-ship-37730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
   background-blend-mode: darken;

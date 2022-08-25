@@ -12,17 +12,21 @@ const Courrier = ({ onClick }) => {
         <h3>Ici ce trouve le courrier du royaume...</h3>
         <button onClick={onClick}>X</button>
       </div>
-      <div className="message">
-        <p>
-          Expediteur: <span>{courrier.name}</span>
-        </p>
-        <p>
-          Email: <span>{courrier.email}</span>
-        </p>
-        <p>
-          Message: <span>{courrier.message}</span>
-        </p>
-      </div>
+      {courrier.name !== "" ? (
+        <div className="message">
+          <p>
+            Expediteur: <span>{courrier.name}</span>
+          </p>
+          <p>
+            Email: <span>{courrier.email}</span>
+          </p>
+          <p>
+            Message: <span>{courrier.message}</span>
+          </p>
+        </div>
+      ) : (
+        <></>
+      )}
     </SecreteStyled>
   );
 };
