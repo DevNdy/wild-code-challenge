@@ -31,6 +31,10 @@ const CardPersonStyled = styled.div`
     color: white;
     font-size: 20px;
   }
+
+  @media (max-width: 700px) {
+    margin-bottom: 15px;
+  }
 `;
 
 export default CardPerson;

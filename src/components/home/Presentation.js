@@ -28,17 +28,17 @@ const PresentationStyled = styled.article`
   width: 50%;
   h4 {
     color: black;
-    opacity: 0.7;
     font-size: 20px;
-    &:hover {
-      opacity: 1;
-    }
   }
   p {
     color: #d1d0c5;
     &:hover {
       color: white;
     }
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
   }
 `;
 

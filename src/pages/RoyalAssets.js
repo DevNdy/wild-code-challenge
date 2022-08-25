@@ -18,6 +18,10 @@ const RoyalAssetsStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    height: 89vh;
+  }
 `;
 
 export default RoyalAssets;

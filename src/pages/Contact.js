@@ -17,6 +17,10 @@ const ContactStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 700px) {
+    height: 89vh;
+  }
 `;
 
 export default Contact;
