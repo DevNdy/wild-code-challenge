@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../ui-reusable/Logo";
 import NavBarRightSide from "./NavBarRightSide";
@@ -6,7 +7,9 @@ import NavBarRightSide from "./NavBarRightSide";
 const NavBar = () => {
   return (
     <NavBarStyled>
-      <Logo />
+      <NavLink className="navLink" to="/">
+        <Logo />
+      </NavLink>
       <NavBarRightSide />
     </NavBarStyled>
   );
@@ -21,6 +24,11 @@ const NavBarStyled = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  .navLink {
+    color: black;
+    text-decoration: white;
+  }
 `;
 
 export default NavBar;

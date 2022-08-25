@@ -10,7 +10,7 @@ const RoyalFamily = () => {
     <RoyalFamilyStyled>
       <Title
         text={`${
-          isTabletOrMobile ? "'The Colchis family'" : "The family royal of kingdom of Colchis"
+          isTabletOrMobile ? "'The Colchis family'" : `"The family royal of kingdom of Colchis"`
         }`}
       />
       <div className="divCard">

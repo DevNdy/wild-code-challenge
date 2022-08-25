@@ -6,7 +6,7 @@ const Courrier = ({ onClick }) => {
   const { courrier } = useContext(CourrierUser);
 
   return (
-    <SecreteStyled>
+    <CourrierStyled>
       <div className="header">
         <p></p>
         <h3>Ici ce trouve le courrier du royaume...</h3>
@@ -27,11 +27,11 @@ const Courrier = ({ onClick }) => {
       ) : (
         <></>
       )}
-    </SecreteStyled>
+    </CourrierStyled>
   );
 };
 
-const SecreteStyled = styled.div`
+const CourrierStyled = styled.div`
   min-height: 200px;
   width: 100%;
   color: black;
