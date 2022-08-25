@@ -37,10 +37,10 @@ const FormContact = () => {
           onChange={inputMess}
           rows="10"
           cols="30"
-          placeholder="what is your message"
+          placeholder="what is your message?"
         ></textarea>
       </label>
-      <button>Send massage</button>
+      <button>Send message</button>
     </FormContactStyled>
   );
 };
